@@ -2,8 +2,8 @@ def loop_message_five_times(str)
   5.times { puts str }
 end
 
-def loop_message_n_times(str, i)
-  i.times { puts str }
+def loop_message_n_times(str, n)
+  n.times { puts str }
 end
 
 def output_array(arr)
@@ -11,7 +11,5 @@ def output_array(arr)
 end
 
 def return_string_array(arr)
-  new_arr = []
-  arr.each { |ele| new_arr << ele.to_s }
-  return new_arr
+  arr.map { |ele| ele.to_s }
 end
